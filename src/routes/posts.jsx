@@ -1,5 +1,6 @@
 import axios from "axios";
 import React from "react";
+import '.././App.css';
 import {
     NavLink,
     Outlet
@@ -22,6 +23,7 @@ export default function Posts() {
       <nav
         style={{
           borderRight: "solid 1px",
+          width: "25%",
           padding: "1rem",
         }}
       >
@@ -39,11 +41,13 @@ export default function Posts() {
           {post.title}
         </NavLink>
       </nav>
-      <Outlet />
     </div>
   ));
 
   return (
-    <ul>{allPosts}</ul>
+    <>
+      <div className="floatsky">{allPosts}</div>
+      <Outlet />
+    </>
   );
 }

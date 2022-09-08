@@ -9,11 +9,14 @@ export default function Post() {
 
     let params = useParams();
 
+    const fullUrl = `${baseURL}/${params.postId}`
+
     React.useEffect(() => {
-        axios.get(baseURL+'/'+parseInt(params.postId, 10)).then((response) => {
+        console.log('Got in here');
+      axios.get(fullUrl).then((response) => {
         setPost(response.data);
-        });
-    }, []);
+      });
+    }, [params.postId]);
 
     if (!post) return null;
 
