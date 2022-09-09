@@ -10,6 +10,7 @@ import Posts from "./routes/posts";
 import Post from "./routes/post";
 import Invoices from "./routes/invoices";
 import Invoice from "./routes/invoice";
+import User from "./routes/user";
 
 
 const root = ReactDOM.createRoot(
@@ -20,6 +21,7 @@ root.render(
     <Routes>
       <Route path="/" element={<App />}>
         <Route path="expenses" element={<Expenses />} />
+        <Route path="user" element={<User />} />
         <Route path="posts" element={<Posts />}>
           <Route
             index
