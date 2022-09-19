@@ -4,3 +4,6 @@
 .active {
   color: blue !important;
 }
+.nav-size {
+  width: 100vw !important;
+}
