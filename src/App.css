@@ -7,3 +7,12 @@
 .nav-size {
   width: 100vw !important;
 }
+.main-wrapper {
+  margin: 20px;
+}
+.mr-2 {
+  margin-right: 10px;
+}
+.center {
+  text-align: center;
+}

@@ -8,7 +8,6 @@ import "./App.css";
 export default function NavBarThing() {
 
   return (
-    <Nav defaultActiveKey="invoices" className="nav-size">
       <Navbar bg="light" expand="md">
         <Container>
           <Navbar.Brand to="/">React-Bootstrap</Navbar.Brand>
@@ -31,6 +30,5 @@ export default function NavBarThing() {
           </Navbar.Collapse>
         </Container>
       </Navbar>
-    </Nav>
   );
 }
