@@ -7,6 +7,7 @@ import {
 import { Provider } from 'react-redux'
 import App from "./App";
 import Expenses from "./routes/expenses";
+import FormZO from "./routes/form";
 import Posts from "./routes/posts";
 import Post from "./routes/post";
 import Invoices from "./routes/invoices";
@@ -23,6 +24,7 @@ root.render(
       <Routes>
         <Route path="/" element={<App />}>
           <Route path="expenses" element={<Expenses />} />
+          <Route path="form" element={<FormZO />} />
           <Route path="user" element={<User />} />
           <Route path="posts" element={<Posts />}>
             <Route

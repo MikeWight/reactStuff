@@ -20,6 +20,9 @@ export default function NavBarThing() {
               <Nav.Link eventKey="expenses" as={Link} to="/expenses">
                 Expenses
               </Nav.Link>
+              <Nav.Link eventKey="form" as={Link} to="/form">
+                Form
+              </Nav.Link>
               <Nav.Link eventKey="posts" as={Link} to="/posts">
                 Posts
               </Nav.Link>
